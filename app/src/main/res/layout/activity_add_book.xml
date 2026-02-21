@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_book_cover"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Cover"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText android:id="@+id/et_isbn" android:layout_width="match_parent" android:layout_height="55dp" android:hint="ISBN Number" android:inputType="number"/>
+        <EditText android:id="@+id/et_title" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Book Title"/>
+        <EditText android:id="@+id/et_author" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Author Name"/>
+        <EditText android:id="@+id/et_category" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Category"/>
+        <EditText android:id="@+id/et_edition" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Edition"/>
+        <EditText android:id="@+id/et_total" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Total Books" android:inputType="number"/>
+        <EditText android:id="@+id/et_issued" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Issued Books" android:inputType="number"/>
+        <EditText android:id="@+id/et_desc" android:layout_width="match_parent" android:layout_height="100dp" android:hint="Description" android:gravity="top" android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_save_book"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SAVE BOOK"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6200EE"/>
+    </LinearLayout>
+</ScrollView>

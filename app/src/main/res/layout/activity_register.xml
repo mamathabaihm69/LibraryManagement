@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join the Library"
+            android:textColor="@color/purple_primary"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText android:id="@+id/reg_name" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Full Name" android:layout_marginBottom="15dp"/>
+                <EditText android:id="@+id/reg_email" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Email Address" android:inputType="textEmailAddress" android:layout_marginBottom="15dp"/>
+                <EditText android:id="@+id/reg_uucms" android:layout_width="match_parent" android:layout_height="55dp" android:hint="UUCMS Number" android:layout_marginBottom="15dp"/>
+                <EditText android:id="@+id/reg_dept" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Department (BCA/BCom)" android:layout_marginBottom="15dp"/>
+                <EditText android:id="@+id/reg_password" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Password" android:inputType="textPassword" android:layout_marginBottom="25dp"/>
+
+                <Button android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="60dp" android:text="REGISTER" android:textColor="#FFFFFF" android:backgroundTint="@color/purple_primary" app:cornerRadius="10dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView android:id="@+id/tv_login_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Already have an account? Login" android:layout_gravity="center" android:layout_marginTop="20dp" android:textColor="@color/purple_light" android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
